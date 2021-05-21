@@ -1,0 +1,16 @@
+{
+  "name": "eleventy-resume",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Hal Lee",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "puppeteer": "^9.1.1"
+  }
+}

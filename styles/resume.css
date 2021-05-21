@@ -1,0 +1,103 @@
+body {
+	font-family: 'Inter';
+	font-size: 10px;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 6em;
+}
+
+h1 {
+	font-size: 2.8em;
+	font-weight: 900;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+h2, h3, h4 { font-size: 1.6em; }
+
+h4 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 1.8em;
+}
+
+p, li {
+	font-size: 1.6em;
+	line-height: 1.4;
+}
+
+a, a:hover, a:visited { 
+	color: inherit;
+	text-decoration-color: rgba(0, 0, 0, 0.25);
+}
+
+header > ul {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	gap: 1em;
+	list-style: none;
+	margin: 0.5em auto;
+	padding: 0;
+}
+
+header > ul > li {
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+header > ul > li svg {
+	height: 1em;
+	margin-bottom: -0.1em;
+	vertical-align: baseline;
+}
+
+header > ul > li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header > ul > li:not(:last-child):after {
+	content: "•";
+	margin-left: 0.5em;
+}
+
+body > header { text-align: center; }
+
+main h2, main h3 { margin: 1em 0 0; }
+
+main h2 { 
+	border-bottom: 1px solid black;
+	padding-bottom: 0.2rem;
+}
+
+section > h3 {
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+section > h3:after {
+	content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+	font-weight: 200;
+}
+
+main header {
+	column-gap: 1em;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto auto;
+}
+
+header h3:not(:first-of-type), header h4:not(:first-of-type) {
+	text-align: right;
+}
