@@ -37,7 +37,7 @@ github: hallee
 
 #### iOS application for blurring the background of portrait photos using a neural network
 
-### [fore.photos](https://fore.photos)
+### [fore.photos](http://fore.photos)
 
 #### 2016
 
